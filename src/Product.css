@@ -17,6 +17,7 @@
 .product__info{
     height: 100px;
     margin-bottom: 15px;
+    z-index: 2;
 }
 .product__price{
     margin-top: 5px;
