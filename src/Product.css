@@ -7,7 +7,7 @@
     margin: 10px;
     width: 100%;
     padding: 20px;
-    max-height: 400px;
+    max-height: 500px;
     min-width: 100px;
     z-index: 1;
 }
@@ -15,9 +15,9 @@
     display: flex;
 }
 .product__info{
-    height: 100px;
+    min-height: 75px;
+    max-height: 1000px;
     margin-bottom: 15px;
-    z-index: 2;
 }
 .product__price{
     margin-top: 5px;
@@ -26,7 +26,8 @@
     max-height: 200px;
     width: 100%;
     object-fit: contain;
-    margin-bottom: 10px;
+    padding: 10px;
+    margin: 10px;
 }
 .product > button {
     background-color: #f0c14b;
