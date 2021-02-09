@@ -1,13 +1,5 @@
 export const initialState = {
-    basket:[
-        {
-            id: "87648234",
-            title : "Hareesh" ,
-             price: 69.69,
-             rating:5,
-             image: "https://images-na.ssl-images-amazon.com/images/I/713px5YqOtL._SL1500_.jpg"
-        },
-    ],
+    basket:[],
     user: null,
 };
 
@@ -19,7 +11,6 @@ const reducer = (state,action) => {
                 ...state,
                 basket: [...state.basket,action.item],
             };
-            break;
         case "REMOVE_FROM_BASKET":
             let newBasket = [...state.basket];
 
@@ -29,9 +20,7 @@ const reducer = (state,action) => {
             {
                 newBasket.splice(index, 1);
             }
-
-            return {...state};
-            break;
+            return {...state,basket: newBasket};
         default:
             return state;
     }
